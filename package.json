@@ -7,19 +7,23 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --exec babel-node lib/server.js --watch",
-    "webpack": "webpack -wd"
+    "webpack": "webpack -wd",
+    "test": "jest --watch"
   },
   "babel": {
     "presets": [
       "@babel/preset-react",
       "@babel/preset-env"
     ],
-    "plugins": ["@babel/plugin-proposal-class-properties"]
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.9.0",
     "eslint-plugin-react": "^7.20.6",
+    "jest": "^26.4.2",
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
